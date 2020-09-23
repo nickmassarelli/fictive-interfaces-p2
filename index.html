@@ -73,12 +73,12 @@
     const imageContainer = document.querySelector('#imageContainer');
     const captionContainer = document.querySelector('#captionContainer');
 
-    const images = ['images/IMG_01.JPG','images/IMG_02.JPG','images/IMG_03.JPG','images/IMG_04.JPG','images/IMG_05.JPG'];
-    const caption = ['Caption 01', 'Caption 02', 'Caption 03', 'Caption 04', 'Caption 05']
+    const images = ['images/01.jpg','images/02.jpg','images/03.jpg','images/04.jpg','images/05.jpg','images/06.jpg','images/07.jpg','images/08.jpg','images/09.jpg','images/10.jpg','images/11.jpg','images/12.jpg','images/13.jpg','images/14.jpg','images/15.jpg','images/16.jpg','images/17.jpg','images/18.jpg','images/19.jpg','images/20.jpg','images/21.jpg','images/22.jpg','images/23.jpg','images/24.jpg','images/25.jpg','images/26.jpg','images/27.jpg','images/28.jpg','images/29.jpg','images/30.jpg','images/31.jpg','images/32.jpg','images/33.jpg','images/34.jpg','images/35.jpg','images/36.jpg','images/37.jpg','images/38.jpg','images/39.jpg','images/40.jpg','images/41.jpg','images/42.jpg','images/43.jpg','images/44.jpg','images/45.jpg','images/46.jpg','images/47.jpg','images/48.jpg','images/49.jpg','images/50.jpg','images/51.jpg','images/52.jpg','images/53.jpg','images/54.jpg','images/55.jpg','images/56.jpg','images/57.jpg','images/58.jpg','images/59.jpg','images/60.jpg','images/61.jpg','images/62.jpg','images/63.jpg','images/64.jpg','images/65.jpg'];
+    const caption = ['It means “Never Work.”','A new art program was introduced into the curriculum of a Swiss vocational school.','Hotline Bling.','A corner, where two walls meet the floor.','The transparency is intentional.','Sometimes the suggestions are inappropriate.','I think it will mean more to me later, seeing all of these names lined up like this.','I guess the art is the photograph. Or maybe it’s the paint. Did the artist take the photo?','Perhaps they could be used to hang the work.','It is not clear why these are paired together.']
 
     function setRandomImage() {
-      const randomImageIndex = Math.floor(Math.random() * 5);
-      const randomCaptionIndex = Math.floor(Math.random() * 5);
+      const randomImageIndex = Math.floor(Math.random() * 65);
+      const randomCaptionIndex = Math.floor(Math.random() * 10);
       imageContainer.src = images[randomImageIndex];
       captionContainer.innerHTML = caption[randomCaptionIndex];
     }
