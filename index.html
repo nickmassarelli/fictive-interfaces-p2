@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="#" />
      <!-- <p>https://www.peachpit.com/articles/article.aspx?p=2239154&seqNum=10</p> -->
   <style>
-  img{
+  img {
     width: 25%;
   }
   </style>
@@ -15,10 +15,26 @@
 
 <body>
   <div>
-    <img src="images/IMG_01.JPG">
+    <img id="imageContainer">
   </div>
   <div>
-    <p>Caption 01 TBD</p>
+    <p id="captionContainer"></p>
   </div>
+  <script>
+    const imageContainer = document.querySelector('#imageContainer');
+    const captionContainer = document.querySelector('#captionContainer');
+
+    const images = ['images/IMG_01.JPG','images/IMG_02.JPG','images/IMG_03.JPG','images/IMG_04.JPG','images/IMG_05.JPG'];
+    const caption = ['Caption 01', 'Caption 02', 'Caption 03', 'Caption 04', 'Caption 05']
+
+    function setRandomImage() {
+      const randomImageIndex = Math.floor(Math.random() * 5);
+      const randomCaptionIndex = Math.floor(Math.random() * 5);
+      imageContainer.src = images[randomImageIndex];
+      captionContainer.innerHTML = caption[randomCaptionIndex];
+    }
+    
+    window.addEventListener('load',setRandomImage);
+  </script>
 </body>
 </html>
